@@ -1,16 +1,16 @@
 (set-env!
  :dependencies  '[[org.clojure/clojure                 "1.7.0"]
-                  [boot/core                           "2.5.1"]
+                  [boot/core                           "2.6.0"]
                   [adzerk/bootlaces                    "0.1.13"]
-                  [cheshire                            "5.5.0"]
-                  [degree9/boot-semver                 "1.2.0"]
-                  [degree9/boot-exec                   "0.2.0"]
+                  [cheshire                            "5.6.3"]
+                  [degree9/boot-semver                 "1.3.6"]
+                  [degree9/boot-exec                   "0.4.0"]
                   [degree9/boot-npm                    "0.2.0"]]
  :resource-paths   #{"src"})
 
 (require
  '[adzerk.bootlaces :refer :all]
- '[boot-semver.core :refer :all])
+ '[degree9.boot-semver :refer :all])
 
 (task-options!
   pom {:project 'degree9/boot-bower
